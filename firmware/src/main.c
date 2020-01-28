@@ -33,17 +33,18 @@
 #include "FreeRTOS.h"
 
 // Main LED Flash
-static void TaskBlinkLED(void* pvParameters)
+static void TaskBlinkLED(void* led)
 {
   while (true)
   {
-
     // LED on
-    PORTB = 1;
+    TRISD.TRISD0 = 0;          /* Tristate 0 for Output */
+    LATD.LATD0 = 1;            /* Output latch register bit = 1 for High output. */
+    
     vTaskDelay(250);
 
     // LED off
-    PORTB = 0;
+    LATD.LATD0 = 0;
     vTaskDelay(250);
 
 
@@ -54,14 +55,13 @@ static void TaskBlinkLED(void* pvParameters)
 
 int main()
 {
-
+  /* Initialize all modules */
+  SYS_Initialize (NULL);
+  
   xTaskCreate(TaskBlinkLED, (const portCHAR*) "LED", 1024, NULL, 1, NULL);
 
   vTaskStartScheduler();
-
-  /* Initialize all modules */
-  SYS_Initialize ( NULL );
-
+  
   while ( true )
   {
       /* Maintain state machines of all polled MPLAB Harmony modules. */
