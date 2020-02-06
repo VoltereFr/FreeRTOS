@@ -52,4 +52,35 @@
 #include <xc.h>
 #include "ISR_Support.h"
 
+   .extern  USB_1_Handler
+
+   .section .vector_45,code, keep
+   .equ     __vector_dispatch_45, IntVectorUSB_1_Handler
+   .global  __vector_dispatch_45
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVectorUSB_1_Handler
+
+IntVectorUSB_1_Handler:
+    la    $26,  _USB_1_Handler
+    jr    $26
+    nop
+    .end    IntVectorUSB_1_Handler
+
+   .section .USB_1_Handler_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _USB_1_Handler
+
+_USB_1_Handler:
+    portSAVE_CONTEXT
+    la    s6,  USB_1_Handler
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end    _USB_1_Handler
 
