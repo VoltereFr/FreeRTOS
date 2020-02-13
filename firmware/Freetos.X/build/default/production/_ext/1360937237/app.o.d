@@ -1,5 +1,9 @@
-build/default/debug/_ext/404212886/timers.o:  \
- ../src/third_party/rtos/FreeRTOS/Source/timers.c  \
+build/default/production/_ext/1360937237/app.o:  \
+../src/app.c  \
+../src/app.h  \
+ ../src/config/default/configuration.h  \
+../src/config/default/user.h  \
+ ../src/config/default/toolchain_specifics.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h  \
  ../src/config/default/FreeRTOSConfig.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h  \
@@ -8,7 +12,4 @@ build/default/debug/_ext/404212886/timers.o:  \
  ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MX/portmacro.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/list.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/timers.h 
+ ../src/third_party/rtos/FreeRTOS/Source/include/list.h 

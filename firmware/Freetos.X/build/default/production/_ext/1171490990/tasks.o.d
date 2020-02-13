@@ -1,5 +1,5 @@
-build/default/production/_ext/1171490990/interrupts.o:  \
- ../src/config/default/interrupts.c  \
+build/default/production/_ext/1171490990/tasks.o:  \
+ ../src/config/default/tasks.c  \
 ../src/config/default/configuration.h  \
  ../src/config/default/user.h  \
 ../src/config/default/toolchain_specifics.h  \

@@ -36,21 +36,20 @@
 // Main LED Flash
 static void TaskBlinkLED(void* led)
 {
-  while (true)
-  {
-    // LED on
-      TRISDbits.TRISD0=0;
-    //TRISD.TRISD0 = 0;          /* Tristate 0 for Output */
-    //LATD.LATD0 = 1;            /* Output latch register bit = 1 for High output. */
-    LATDbits.LATD0=0;
-    vTaskDelay(250);
-    LATDbits.LATD0=1;
-    // LED off
-    //LATD.LATD0 = 0;
-    vTaskDelay(250);
-    TRISDbits.TRISD7=1;
+    TRISDbits.TRISD0=0;
+    const TickType_t xDelay = 500 / portTICK_PERIOD_MS;
+  while (1)
+  {    
+    /*TRISDbits.TRISD7=1;
     TRISDbits.TRISD1=0;
-    LATDbits.LATD1=PORTDbits.RD7;
+    LATDbits.LATD1=PORTDbits.RD7;*/
+    /* Block for 500ms. */
+         /* Simply toggle the LED every 500ms, blocking between each toggle. */
+        LATDbits.LATD0=0;
+        vTaskDelay( xDelay );
+        LATDbits.LATD0=1;
+        vTaskDelay( xDelay );
+         
   }
 
   vTaskDelete(NULL);
@@ -61,17 +60,16 @@ int main()
   /* Initialize all modules */
   SYS_Initialize (NULL);
   
-  xTaskCreate(TaskBlinkLED, (const portCHAR*) "LED", 1024, NULL, 1, NULL);
+  xTaskCreate(TaskBlinkLED, (const portCHAR*) "LED", 1024, NULL, 1 , NULL);
 
   vTaskStartScheduler();
-#if 0  
-  while ( true )
+ 
+  /*while ( true )
   {
-      /* Maintain state machines of all polled MPLAB Harmony modules. */
       SYS_Tasks ( );
   }
-  /* Execution should not come here during normal operation */
-#endif
+  */
+
   return ( EXIT_FAILURE );
 
 }

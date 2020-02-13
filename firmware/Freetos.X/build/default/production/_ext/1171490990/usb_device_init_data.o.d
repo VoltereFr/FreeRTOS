@@ -1,8 +1,8 @@
-build/default/production/_ext/1171490990/interrupts.o:  \
- ../src/config/default/interrupts.c  \
-../src/config/default/configuration.h  \
- ../src/config/default/user.h  \
-../src/config/default/toolchain_specifics.h  \
+build/default/production/_ext/1171490990/usb_device_init_data.o:  \
+ ../src/config/default/usb_device_init_data.c  \
+ ../src/config/default/configuration.h  \
+../src/config/default/user.h  \
+ ../src/config/default/toolchain_specifics.h  \
  ../src/config/default/definitions.h  \
  ../src/config/default/usb/usb_device_cdc.h  \
  ../src/config/default/configuration.h  \

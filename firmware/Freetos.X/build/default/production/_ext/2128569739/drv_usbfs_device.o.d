@@ -1,36 +1,23 @@
-build/default/production/_ext/1171490990/interrupts.o:  \
- ../src/config/default/interrupts.c  \
-../src/config/default/configuration.h  \
- ../src/config/default/user.h  \
-../src/config/default/toolchain_specifics.h  \
- ../src/config/default/definitions.h  \
- ../src/config/default/usb/usb_device_cdc.h  \
+build/default/production/_ext/2128569739/drv_usbfs_device.o:  \
+ ../src/config/default/driver/usb/usbfs/src/drv_usbfs_device.c  \
  ../src/config/default/configuration.h  \
+../src/config/default/user.h  \
+ ../src/config/default/toolchain_specifics.h  \
+ ../src/config/default/driver/usb/usbfs/drv_usbfs.h  \
  ../src/config/default/usb/usb_common.h  \
  ../src/config/default/usb/usb_chapter_9.h  \
- ../src/config/default/usb/usb_device.h  \
- ../src/config/default/system/system.h  \
- ../src/config/default/system/system_common.h  \
- ../src/config/default/system/system_module.h  \
- ../src/config/default/system/system_common.h  \
  ../src/config/default/driver/driver_common.h  \
- ../src/config/default/driver/usb/drv_usb.h  \
  ../src/config/default/system/int/sys_int.h  \
  ../src/packs/PIC32MX795F512L_DFP/device.h  \
  ../src/config/default/toolchain_specifics.h  \
  ../src/config/default/peripheral/evic/plib_evic.h  \
  ../src/config/default/system/int/sys_int_mapping.h  \
+ ../src/config/default/driver/usb/drv_usb.h  \
+ ../src/config/default/system/system_module.h  \
+ ../src/config/default/system/system_common.h  \
  ../src/config/default/usb/usb_host_client_driver.h  \
  ../src/config/default/usb/usb_host.h  \
  ../src/config/default/usb/usb_host_hub_interface.h  \
- ../src/config/default/usb/src/usb_device_mapping.h  \
- ../src/config/default/usb/src/usb_device_function_driver.h  \
- ../src/config/default/usb/usb_cdc.h  \
-../src/config/default/usb/usb_cdc.h  \
- ../src/config/default/peripheral/clk/plib_clk.h  \
- ../src/config/default/peripheral/gpio/plib_gpio.h  \
- ../src/config/default/peripheral/evic/plib_evic.h  \
- ../src/config/default/driver/usb/usbfs/drv_usbfs.h  \
  ../src/config/default/driver/usb/usbfs/src/plib_usbfs.h  \
  ../src/config/default/driver/usb/usbfs/src/usbfs_registers.h  \
  ../src/config/default/driver/usb/usbfs/src/plib_usbfs_header.h  \
@@ -90,7 +77,22 @@ build/default/production/_ext/1171490990/interrupts.o:  \
  ../src/config/default/driver/usb/usbfs/src/templates/usb_EPnRxEnableEnhanced_PIC32.h  \
  ../src/config/default/driver/usb/usbfs/src/templates/usb_BDTFunctions_PIC32.h  \
  ../src/config/default/usb/usb_hub.h  \
+ ../src/config/default/system/system_common.h  \
  ../src/config/default/driver/usb/usbfs/src/drv_usbfs_variant_mapping.h  \
+ ../src/config/default/driver/usb/usbfs/src/drv_usbfs_local.h  \
+ ../src/config/default/driver/usb/drv_usb_external_dependencies.h  \
+ ../src/config/default/definitions.h  \
+ ../src/config/default/usb/usb_device_cdc.h  \
+ ../src/config/default/usb/usb_device.h  \
+ ../src/config/default/system/system.h  \
+ ../src/config/default/usb/src/usb_device_mapping.h  \
+ ../src/config/default/usb/src/usb_device_function_driver.h  \
+ ../src/config/default/usb/usb_cdc.h  \
+../src/config/default/usb/usb_cdc.h  \
+ ../src/config/default/peripheral/clk/plib_clk.h  \
+ ../src/config/default/peripheral/gpio/plib_gpio.h  \
+ ../src/config/default/peripheral/evic/plib_evic.h  \
+ ../src/config/default/driver/usb/usbfs/drv_usbfs.h  \
  ../src/config/default/usb/usb_chapter_9.h  \
  ../src/config/default/usb/usb_device.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h  \
@@ -110,4 +112,5 @@ build/default/production/_ext/1171490990/interrupts.o:  \
  ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/semphr.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
-../src/app.h 
+../src/app.h  \
+ ../src/config/default/osal/osal.h 

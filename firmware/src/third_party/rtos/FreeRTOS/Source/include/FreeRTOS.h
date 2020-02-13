@@ -109,35 +109,35 @@ extern "C" {
 #endif
 
 #ifndef INCLUDE_vTaskPrioritySet
-	#define INCLUDE_vTaskPrioritySet 0
+	#define INCLUDE_vTaskPrioritySet 1
 #endif
 
 #ifndef INCLUDE_uxTaskPriorityGet
-	#define INCLUDE_uxTaskPriorityGet 0
+	#define INCLUDE_uxTaskPriorityGet 1
 #endif
 
 #ifndef INCLUDE_vTaskDelete
-	#define INCLUDE_vTaskDelete 0
+	#define INCLUDE_vTaskDelete 1
 #endif
 
 #ifndef INCLUDE_vTaskSuspend
-	#define INCLUDE_vTaskSuspend 0
+	#define INCLUDE_vTaskSuspend 1
 #endif
 
 #ifndef INCLUDE_vTaskDelayUntil
-	#define INCLUDE_vTaskDelayUntil 0
+	#define INCLUDE_vTaskDelayUntil 1
 #endif
 
 #ifndef INCLUDE_vTaskDelay
-	#define INCLUDE_vTaskDelay 0
+	#define INCLUDE_vTaskDelay 1
 #endif
 
 #ifndef INCLUDE_xTaskGetIdleTaskHandle
-	#define INCLUDE_xTaskGetIdleTaskHandle 0
+	#define INCLUDE_xTaskGetIdleTaskHandle 1
 #endif
 
 #ifndef INCLUDE_xTaskAbortDelay
-	#define INCLUDE_xTaskAbortDelay 0
+	#define INCLUDE_xTaskAbortDelay 1
 #endif
 
 #ifndef INCLUDE_xQueueGetMutexHolder

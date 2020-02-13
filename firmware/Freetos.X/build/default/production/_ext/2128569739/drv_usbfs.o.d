@@ -1,16 +1,17 @@
-build/default/production/_ext/1171490990/interrupts.o:  \
- ../src/config/default/interrupts.c  \
-../src/config/default/configuration.h  \
- ../src/config/default/user.h  \
-../src/config/default/toolchain_specifics.h  \
+build/default/production/_ext/2128569739/drv_usbfs.o:  \
+ ../src/config/default/driver/usb/usbfs/src/drv_usbfs.c  \
+ ../src/config/default/configuration.h  \
+../src/config/default/user.h  \
+ ../src/config/default/toolchain_specifics.h  \
+ ../src/config/default/driver/usb/usbfs/src/drv_usbfs_local.h  \
+ ../src/config/default/driver/usb/drv_usb_external_dependencies.h  \
+ ../src/config/default/system/system_common.h  \
  ../src/config/default/definitions.h  \
  ../src/config/default/usb/usb_device_cdc.h  \
- ../src/config/default/configuration.h  \
  ../src/config/default/usb/usb_common.h  \
  ../src/config/default/usb/usb_chapter_9.h  \
  ../src/config/default/usb/usb_device.h  \
  ../src/config/default/system/system.h  \
- ../src/config/default/system/system_common.h  \
  ../src/config/default/system/system_module.h  \
  ../src/config/default/system/system_common.h  \
  ../src/config/default/driver/driver_common.h  \
@@ -110,4 +111,6 @@ build/default/production/_ext/1171490990/interrupts.o:  \
  ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/semphr.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
-../src/app.h 
+../src/app.h  \
+ ../src/config/default/driver/usb/usbfs/drv_usbfs.h  \
+ ../src/config/default/osal/osal.h 
